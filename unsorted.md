@@ -1,0 +1,46 @@
+# THE MOST WONDERFUL LINUX DEV
+
+# Init
+apt install open-vm-tools
+apt install sudo
+/sbin/adduser romheat sudo
+
+# Basic Packages
+apt install git zsh vim 
+apt install unzip curl
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+
+# see: https://thomashunter.name/i3-configurator/
+apt install i3 i3status i3lock dmenu
+apt install lightdm 
+apt install xdg-utils xsel xclip inmtuirxvt-unicode
+
+# Keyring
+apt install gnome-keyring
+
+- /.config/i3/ 
+- exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
+
+# Install fonts
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+
+
+# node.js install
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash - 
+sudo apt install node
+
+# optional 
+apt install imagemagick 
+
+# vscode 
+"window.titleBarStyle": "custom",
+
+
+# nfs shares
+apt install nfs-common
+
+/etc/fstab
+tierra:/home/romheat/dev /home/romheat/dev nfs4 _netdev,auto 0 0%
+
+/etc/exports
+/home/romheat/dev	192.168.1.226(rw,sync)
