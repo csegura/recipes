@@ -1,5 +1,8 @@
+mkdir -p ~/recipes/customize/.config/i3
+mkdir -p ~/recipes/customize/.config/i3status
+
 cp ~/.Xdefaults ~/recipes/customize/dotfiles
-cp -r ~/.config/i3 ~/recipes/customize/config
-cp -r ~/.config/i3status ~/recipes/customize/config
+cp -rp ~/.config/i3 ~/recipes/customize/.config/i3
+cp -rp ~/.config/i3status ~/recipes/customize/.config/i3status/config
 cp /etc/xrdp/xrdp.ini ~/recipes/customize/xrdp/
-cp /etc/xrdp/*.bpm ~/recipes/customize/xrdp/
+cp /etc/xrdp/*.bmp ~/recipes/customize/xrdp/
