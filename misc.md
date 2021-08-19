@@ -1,5 +1,5 @@
 ## Taping On 
-
+- Touchpad tap
 sudo vi /usr/share/X11/xorg.conf.d/40-libinput.conf
 
 Modify Section "InputClass" -> TouchPad
@@ -12,3 +12,7 @@ Modify Section "InputClass" -> TouchPad
     EndSection
 
 
+## Monitor
+- Use autorandr to store monitor configurations
+
+sudo apt install autorandr 
