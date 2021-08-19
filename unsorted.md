@@ -38,9 +38,13 @@ apt install imagemagick
 
 # nfs shares
 apt install nfs-common
+ssh-copy-id -i ./.ssh/id_rsa.pub romheat@tierra
 
 /etc/fstab
 tierra:/home/romheat/dev /home/romheat/dev nfs4 _netdev,auto 0 0%
 
 /etc/exports
-/home/romheat/dev	192.168.1.226(rw,sync)
+/home/romheat/dev	192.168.1.226(rw,sync) 
+(could be necesary no_root_squash)
+
+ sudo systemctl restart nfs-kernel-server
