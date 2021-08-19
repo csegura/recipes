@@ -1,2 +1,2 @@
-cp ~/recipes/customize/.config ~/.config
-cp ~/recipes/dotfiles/.Xdefaults ~/
+cp -r ~/recipes/customize/.config ~/
+cp ~/recipes/customize/dotfiles/.Xdefaults ~/
