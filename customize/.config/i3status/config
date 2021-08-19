@@ -9,6 +9,9 @@
 general {
         colors = true
         interval = 5
+        color_good = "#a3be8c"
+        color_degraded = "#B48EAD"
+        color_bad = "#bf616a"
 }
 
 # order += "ipv6"
@@ -83,5 +86,5 @@ memory {
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%m-%d %H:%M:%S"
 }

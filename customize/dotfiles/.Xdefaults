@@ -1,4 +1,3 @@
-
 !! Cursor word movement
 !!URxvt*altSendsEscape: true
 !!URxvt.keysym.Control-Up:   \033[1;5A
@@ -17,43 +16,23 @@ xterm*faceSize: 10
 xterm*background: black
 
 !-- Xft settings -- !
-Xft.dpi:        72
+! Xft.dpi:        72 ! 120
+Xft.dpi:        96
 Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintfull
 
 ! -- Fonts -- !
-! URxvt.font:xft:Monospace:pixelsize=14
-! URxvt.boldfont:xft:Monospace-Bold:pixelsize=14
 URxvt.font:xft:JetBrains Mono :size=14:style=Regular
 URxvt.boldfont:xft:JetBrains Mono :size=14:style=bold
 
-!URxvt*faceName: Monospace
-!URxvt*faceSize: 12
-
-XTerm*SaveLines: 4000
-!! XTerm*leftScrollBar: true
-!! XTerm*ScrollBar: true
-!! XTerm*scrollTtyOutput: false
-!! XTerm*VT100.Translations: #override \
-!!      Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n
-!!      Shift Ctrl<Key>V: insert-selection(PRIMARY) \n
-!!      Shift<Btn1Down>: select-start() \n
-!!      Shift<Btn1Motion>: select-extend() \n 
-!!      Shift<Btn1Up>: select-end(CLIPBOARD) \n
+URxvt.SaveLines: 9000
+URxvt.perl-ext-common: defaults,eval,font-size
 
 ! Restore Ctrl+Shift+(c|v) - perl required
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
-URxvt.perl-ext-common: defaults,eval,font-size
-
-!! URxvt.keysym.C-S-Up:   font-size:incglobal
-!! URxvt.keysym.C-S-Down: font-size:decglobal
-!! URxvt.keysym.C-equal:  font-size:reset
-!! URxvt.keysym.C-slash:  font-size:show
-
 
 ! Dracula Xresources palette
 ! *.foreground: #F8F8F2
@@ -61,6 +40,7 @@ URxvt.perl-ext-common: defaults,eval,font-size
 ! #282A36
 ! *.color0:     #000000
 ! *.color8:     #4D4D4D
+
 ! *.color1:     #FF5555
 ! *.color9:     #FF6E67
 ! *.color2:     #50FA7B 
@@ -93,29 +73,29 @@ URxvt.perl-ext-common: defaults,eval,font-size
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
 
-*.foreground:   nord4
+*.foreground:   #D8DEE9
 *.background:   #000000
-*.cursorColor:  nord4
+*.cursorColor:  #d8dee9
 *fading: 35
 *fadeColor: #0F0F0F
 ! nord3
 
-*.color0: nord1
-*.color1: nord11
-*.color2: nord14
-*.color3: nord13
-*.color4: nord9
-*.color5: nord15
-*.color6: nord8
-*.color7: nord5
-*.color8: nord3
-*.color9: nord11
-*.color10: nord14
-*.color11: nord13
-*.color12: nord9
-*.color13: nord15
-*.color14: nord7
-*.color15: nord6
+*.color0: #2E3440
+*.color8: #3B4252
+*.color1: #bf616a
+*.color9: #BF616A
+*.color2: #a3be8c
+*.color10: #A3BE8C
+*.color3: #EBCB8B
+*.color11: #EBCB8B
+*.color4: #81A1C1
+*.color12: #81A1C1
+*.color5: #B48EAD
+*.color13: #B48EAD
+*.color6: #88C0D0
+*.color14: #8FBCBB
+*.color7: #E5E9F0
+*.color15: #ECEFF4
 
 ! Font spacing
 ! By default the distance between characters can feel too wide. Its controlled
